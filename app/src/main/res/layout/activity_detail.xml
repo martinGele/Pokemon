@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:scaleType="matrix"
+                android:id="@+id/image"
+                android:layout_width="@dimen/fifity_250dp"
+                android:layout_height="@dimen/fifity_250dp"/>
+
+        <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/ability"
+                android:textSize="@dimen/text_size_concent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"/>
+        <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/forms"
+                android:textSize="@dimen/text_size_concent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"/>
+        <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/game_index"
+                android:textSize="@dimen/text_size_concent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"/>
+        <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/weight"
+                android:textSize="@dimen/text_size_concent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"/>
+        <TextView
+                android:layout_margin="15dp"
+                android:id="@+id/species"
+                android:textSize="@dimen/text_size_concent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

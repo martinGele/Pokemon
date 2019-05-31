@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_height">180dp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+    <dimen name="fifity_50dp">50dp</dimen>
+    <dimen name="text_size_header">18sp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="layout_margin_list_item">5dp</dimen>
+    <dimen name="text_size_concent">18sp</dimen>
+    <dimen name="paddin_picture">50dp</dimen>
+    <dimen name="fifity_250dp">250dp</dimen>
+    <dimen name="fifity_150dp">150dp</dimen>
+    <dimen name="fifity_180dp">180dp</dimen>
+</resources>
