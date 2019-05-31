@@ -14,6 +14,7 @@ import kotlinx.coroutines.launch
 import java.lang.Exception
 import javax.inject.Inject
 import androidx.core.view.accessibility.AccessibilityEventCompat.setAction
+import androidx.lifecycle.LifecycleObserver
 import com.google.android.material.snackbar.Snackbar
 
 
@@ -32,7 +33,6 @@ class DetailActivity : DaggerActivity() {
     init {
         CoroutineScope(Dispatchers.Main).launch {
 
-
             try {
 
                 val getData = detailActivityViewModel.showDataFromApi()
@@ -44,6 +44,12 @@ class DetailActivity : DaggerActivity() {
                 Glide.with(this@DetailActivity).load(getData.sprites.frontShiny).into(image)
             }catch (e: Exception){
                 e.localizedMessage.toString()
+                Snackbar.make(
+                    root_layout, // Parent view
+                    "Something went wrong!", // Message to show
+                    Snackbar.LENGTH_SHORT // How long to display the message.
+                ).show()
+
 
             }
         }
