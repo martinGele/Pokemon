@@ -31,7 +31,7 @@ class AppModule {
 
     @Provides
     @Singleton
-    fun provideOkHttpClient(application: Application): OkHttpClient {
+    fun provideOkHttpClient(application: Application): OkHttpClient  {
         val interceptor = HttpLoggingInterceptor()
         interceptor.level = HttpLoggingInterceptor.Level.BASIC
 
@@ -44,13 +44,14 @@ class AppModule {
             .connectTimeout(30, TimeUnit.SECONDS)
             .readTimeout(60, TimeUnit.SECONDS)
             .writeTimeout(60, TimeUnit.SECONDS)
+            .callTimeout(0, TimeUnit.SECONDS)
             .addInterceptor(interceptor)
             .build()
     }
 
     @Provides
     @Singleton
-    fun provideApiService(gson: Gson, okHttpClient: OkHttpClient): ApiCalls {
+    fun provideApiService(gson: Gson, okHttpClient: OkHttpClient): ApiCalls  {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(gson))

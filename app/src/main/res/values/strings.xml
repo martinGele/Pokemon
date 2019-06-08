@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">PokemonTask</string>
     <string name="list_of_pokemons">LIST OF POKEMONS</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="weight">weight:</string>
 </resources>
